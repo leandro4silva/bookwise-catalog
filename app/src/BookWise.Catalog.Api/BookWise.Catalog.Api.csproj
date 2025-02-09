@@ -13,6 +13,13 @@
         <RootNamespace>BookWise.Catalog</RootNamespace>
     </PropertyGroup>
     <ItemGroup>
-        <PackageReference Include="Amazon.Lambda.AspNetCoreServer" Version="9.0.2"/>
+        <PackageReference Include="Amazon.Lambda.AspNetCoreServer" Version="9.0.3" />
+        <PackageReference Include="Amazon.Lambda.AspNetCoreServer.Hosting" Version="1.7.3" />
+        <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.7.3" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\BookWise.Catalog.Application\BookWise.Catalog.Application.csproj" />
+      <ProjectReference Include="..\BookWise.Catalog.Infrastructure\BookWise.Catalog.Infrastructure.csproj" />
     </ItemGroup>
 </Project>
