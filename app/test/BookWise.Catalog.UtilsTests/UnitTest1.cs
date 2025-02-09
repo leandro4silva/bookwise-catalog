@@ -1,3 +1,5 @@
+using Xunit;
+
 namespace BookWise.Catalog.UtilsTests
 {
     public class UnitTest1

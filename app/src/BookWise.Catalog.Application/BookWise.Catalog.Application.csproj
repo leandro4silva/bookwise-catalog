@@ -6,4 +6,20 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+        <PackageReference Include="AutoMapper" Version="13.0.1" />
+        <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.11.0" />
+        <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Handlers\v1\DeleteBook\" />
+      <Folder Include="Handlers\v1\GetBookById\" />
+      <Folder Include="Handlers\v1\UpdateBook\" />
+      <Folder Include="Models\Responses\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\BookWise.Catalog.Infrastructure\BookWise.Catalog.Infrastructure.csproj" />
+    </ItemGroup>
 </Project>

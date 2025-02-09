@@ -1,12 +1,24 @@
 {
   "profiles": {
-    "BookWise.Catalog.Api": {
+    "Api (Dev)": {
       "commandName": "Project",
       "launchBrowser": true,
+      "launchUrl": "swagger",
+      "dotnetRunMessages": true,
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "dev"
       },
-      "applicationUrl": "https://localhost:64467;http://localhost:64468"
+      "applicationUrl": "https://localhost:5016"
+    },
+    "Api (Hom)": {
+      "commandName": "Project",
+      "launchBrowser": false,
+      "launchUrl": "swagger",
+      "dotnetRunMessages": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "hom"
+      },
+      "applicationUrl": "https://localhost:5016"
     }
   }
 }
