@@ -1,5 +1,6 @@
 using AutoMapper;
 using BookWise.Catalog.Application.Handlers.v1.CreateBook;
+using BookWise.Catalog.Application.Handlers.v1.DeleteBook;
 using BookWise.Catalog.Application.Handlers.v1.UpdateBookCover;
 using BookWise.Catalog.Domain.Entities;
 
@@ -32,5 +33,9 @@ public class BookProfile : Profile
             .ForMember(dest => dest.NumberOfPages, opt => opt.MapFrom(src => src.NumberOfPages))
             .ForMember(dest => dest.YearOfPublish, opt => opt.MapFrom(src => src.YearOfPublish))
             .ForMember(dest => dest.CreatedDate, opt => opt.MapFrom(src => src.CreatedDate));
+        
+        _ = CreateMap<Book, DeleteBookResult>()
+            .ForMember(dest => dest.Deleted, opt => opt.MapFrom(src => true));
+
     }
 }
