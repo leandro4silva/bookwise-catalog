@@ -9,7 +9,7 @@ namespace BookWise.Catalog.Application.Handlers.v1.UpdateBookCover;
 public sealed class UpdateBookCoverCommand : IRequest<UpdateBookCoverResult>
 {
     [FromRoute] 
-    public Guid? Id { get; set; }
+    public Guid Id { get; set; }
     
     [FromForm(Name = "image")]
     public IFormFile? Image { get; set; }

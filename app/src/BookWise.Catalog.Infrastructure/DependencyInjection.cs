@@ -1,3 +1,4 @@
+using Amazon.S3;
 using Amazon.SQS;
 using BookWise.Catalog.Domain.Repositories;
 using BookWise.Catalog.Infrastructure.Configurations;
@@ -33,6 +34,8 @@ public static class DependencyInjection
 
     public static IServiceCollection AddServices(this IServiceCollection services)
     {
+        AddS3Bucket(services);
+        
         services.AddScoped<INotificationService, NotificationService>();
 
         return services;
@@ -48,6 +51,13 @@ public static class DependencyInjection
         
         services.Configure<AuditoriaConfig>(configuration.GetSection(nameof(AuditoriaConfig)));
         
+        return services;
+    }
+    
+    private static IServiceCollection AddS3Bucket(this IServiceCollection services)
+    {
+        services.AddScoped<IAmazonS3, AmazonS3Client>();
+
         return services;
     }
     
