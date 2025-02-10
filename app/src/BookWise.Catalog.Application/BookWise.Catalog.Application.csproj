@@ -13,8 +13,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Handlers\v1\DeleteBook\" />
-      <Folder Include="Handlers\v1\GetBookById\" />
       <Folder Include="Handlers\v1\UpdateBook\" />
       <Folder Include="Models\Responses\" />
     </ItemGroup>
