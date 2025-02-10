@@ -7,7 +7,6 @@ using BookWise.Catalog.Domain.Repositories;
 using BookWise.Catalog.Infrastructure.LogAudit.Abstractions;
 using BookWise.Catalog.Infrastructure.LogAudit.Dtos;
 using BookWise.Catalog.Infrastructure.LogAudit.Enums;
-using BookWise.Catalog.Infrastructure.MessageBus.Abstraction;
 using BookWise.Catalog.Infrastructure.Notifications.Abstraction;
 using MediatR;
 using Microsoft.Extensions.Logging;
@@ -19,16 +18,19 @@ public sealed class CreateBookHandler : IRequestHandler<CreateBookCommand, Creat
     private readonly ILogger<CreateBookHandler> _logger;
     private readonly INotificationService _notificationService;
     private readonly IMapper _mapper;
-    private readonly IEventProcessor _eventProcessor;
     private readonly ILogAuditService _logAuditService;
     private readonly IBookRepository _bookRepository;
 
-    public CreateBookHandler(ILogger<CreateBookHandler> logger, INotificationService notificationService, IMapper mapper, IEventProcessor eventProcessor, ILogAuditService logAuditService, IBookRepository bookRepository)
+    public CreateBookHandler(
+        ILogger<CreateBookHandler> logger, 
+        INotificationService notificationService, 
+        IMapper mapper, 
+        ILogAuditService logAuditService, 
+        IBookRepository bookRepository)
     {
         _logger = logger;
         _notificationService = notificationService;
         _mapper = mapper;
-        _eventProcessor = eventProcessor;
         _logAuditService = logAuditService;
         _bookRepository = bookRepository;
     }
