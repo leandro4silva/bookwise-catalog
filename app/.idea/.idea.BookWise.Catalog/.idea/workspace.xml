@@ -60,21 +60,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.BookWise.Catalog.Api: Api (Dev).executor": "Debug",
-    ".NET Launch Settings Profile.BookWise.Catalog.Api: Api (Hom).executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "feature/create-book",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.BookWise.Catalog.Api: Api (Dev).executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.BookWise.Catalog.Api: Api (Hom).executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/get-book-by-id&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.BookWise.Catalog.Api: Api (Hom)">
     <configuration name="BookWise.Catalog.Api" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -170,6 +170,7 @@
       <workItem from="1738972653563" duration="1415000" />
       <workItem from="1739032394326" duration="382000" />
       <workItem from="1739034583690" duration="18402000" />
+      <workItem from="1739202720179" duration="1692000" />
     </task>
     <task id="LOCAL-00001" summary="feat: initial setup">
       <option name="closed" value="true" />
@@ -218,10 +219,10 @@
           <line>48</line>
           <properties documentPath="C:\Users\LeandroAlves\development\projects\applications\bookwise-catalog\app\src\BookWise.Catalog.Application\Handlers\v1\CreateBook\CreateBookHandler.cs" containingFunctionPresentation="Method 'CreateBookAsync'">
             <startOffsets>
-              <option value="1974" />
+              <option value="1777" />
             </startOffsets>
             <endOffsets>
-              <option value="2030" />
+              <option value="1815" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="3" />
